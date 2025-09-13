@@ -20,13 +20,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "M.Smart Shipment & Logistics Delivery Company | Fast & Reliable Shipping",
+  title: "Ship Wide Logistics Delivery Company | Fast & Reliable Shipping",
   description: "Ship your packages worldwide with confidence.",
   keywords: "shipping, logistics, delivery, tracking",
-  authors: [{ name: "M.Smart Shipment & Logistics Delivery Company" }],
-  creator: "M.Smart Shipment & Logistics Delivery Company",
+  authors: [{ name: "Ship Wide Logistics Delivery Company" }],
+  creator: "Ship Wide Logistics Delivery Company",
   openGraph: {
-    title: "M.Smart Shipment & Logistics Delivery Company",
+    title: "Ship Wide Logistics Delivery Company",
   },
 };
 
