@@ -9,7 +9,7 @@ export default function TopHeader() {
     <div className="bg-primary sticky top-0 z-50 text-gray-300 py-4 px-4 md:px-12">
       <div className="container mx-auto flex flex-row md:flex-cpl justify-between items-start md:items-center">
         <div className="flex flex-col md:flex-row  justify-between">
-          <span className="mr-0 md:mr-4 text-sm md:text-lg">Email: contact-us@shipwidelogistics.com</span>
+          <span className="mr-0 md:mr-4 text-sm md:text-lg">Email: contact-us@shipwidelogistics.online</span>
           {/* <span className="text-sm md:text-lg">Phone: +1 223-456-7890</span> */}
         </div>
         <div className="flex flex-col md:flex-row  justify-between">
