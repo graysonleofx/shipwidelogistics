@@ -26,17 +26,17 @@ export default function HeroSection() {
               <span className="text-orange-400 font-semibold text-lg">M.Smart Shipment & Logistics Transportation Inc.</span>
             </div> */}
             <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Welcome To Ship Wide Logistics Company
+              Welcome To Shipwide Logistics Company & Fast Delivery
             </h1>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Take your business to the next level with Shipe Wide Logistics new business management tools. Ship Wide Logistics will open a new horizon for us.
+              Take your business to the next level with Shipwide Logistics new business management tools. Ship Wide Logistics will open a new horizon for us.
             </p>
             <div className="flex flex-col items-center justify-center sm:flex-row gap-4">
-              <button
+              {/* <button
               onClick={scrollToService}
               className="border-2 border-white text-white hover:bg-white hover:text-slate-800 px-8 py-4 rounded-2xl font-semibold transition-colors whitespace-nowrap cursor-pointer">
                 Our Services
-              </button>
+              </button> */}
 
               <button 
                 onClick={scrollToTracking}

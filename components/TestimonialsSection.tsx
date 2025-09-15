@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'E-commerce Manager, ShopEase',
-    feedback: 'M.Smart Shipment & Logistics has been a game changer for our business. Fast, reliable, and always professional!',
+    feedback: 'Ship wide Logistics has been a game changer for our business. Fast, reliable, and always professional!',
     avatar: 'https://randomuser.me/api/portraits/women/44.jpg'
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: 'Priya Patel',
     role: 'Operations Director, FreshMart',
-    feedback: 'We trust M.Smart Shipment for all our logistics needs. They always deliver on time and keep us updated.',
+    feedback: 'We trust Ship wide for all our logistics needs. They always deliver on time and keep us updated.',
     avatar: 'https://randomuser.me/api/portraits/women/68.jpg'
   }
 ];

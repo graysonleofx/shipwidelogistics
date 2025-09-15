@@ -53,14 +53,14 @@ export default function AboutSection() {
               ))}
             </div>
 
-            <div className="bg-secondary text-white p-6 rounded-lg">
+            {/* <div className="bg-secondary text-white p-6 rounded-lg">
               <div className="flex items-center mb-2">
                 <i className="ri-phone-line text-background text-xl mr-3"></i>
                 <span className="text-gray-300">Have Questions?</span>
               </div>
               <p className="text-xl font-semibold">Call Us Any Time</p>
-              <p className="text-background text-lg">+1 704 000-0000</p>
-            </div>
+              <p className="text-background text-lg">+1 223-456-7890</p>
+            </div> */}
           </div>
 
           <div className="relative">

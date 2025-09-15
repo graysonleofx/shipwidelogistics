@@ -31,7 +31,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center">
                 <i className="ri-truck-line text-xl"></i>
               </div>
-              <h3 className="text-2xl font-bold" style={{fontFamily: "Roboto, serif"}}>Smart<span style={{color: '#16DB65'}}>Shipment</span></h3>
+              <h3 className="text-2xl font-bold" style={{fontFamily: "Roboto, serif"}}>SHIP<span style={{color: '#16DB65'}}>WIDE</span></h3>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted partner in global logistics and freight transportation. We deliver excellence across land, sea, and rail.
@@ -86,17 +86,17 @@ export default function Footer() {
                 <i className="ri-map-pin-line text-background text-lg mr-3 mt-1"></i>
                 <p className="text-gray-300">10685-B Hazelhurst Dr. Houston, Tx 77043 United State</p>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <i className="ri-phone-line text-background text-lg mr-3"></i>
                 <p className="text-gray-300">+1 704 677-4835</p>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <i className="ri-mail-line text-background text-lg mr-3"></i>
-                <p className="text-gray-300">contact-us@m.smartshipment.online</p>
+                <p className="text-gray-300">contact-us@shipwidelogistics.online</p>
               </div>
               <div className="flex items-center">
                 <i className="ri-time-line text-background text-lg mr-3"></i>
-                <p className="text-gray-300">24/7 Support</p>
+                <p className="text-gray-300">24/7 Support Service</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Smart Shipment & Transportation. All rights reserved.
+              © {currentYear} Ship wide Logistics & Transportation. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-orange-400 text-sm transition-colors cursor-pointer">Privacy Policy</a>

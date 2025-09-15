@@ -170,21 +170,20 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-1">Our Address</h4>
-                  <h4 className="font-semibold text-slate-800 mb-1">M.Smart Shipment & Logistics LLC</h4>
+                  <h4 className="font-semibold text-slate-800 mb-1">Ship wide Logistics LLC</h4>
                   <p className="text-gray-600">10685-B Hazelhurst Dr. Houston, Tx 77043 United State</p>
                 </div>
               </div>
 
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <div className="w-12 h-12  bg-secondary/10  rounded-lg flex items-center justify-center mr-4">
                   <i className="ri-phone-line text-secondary text-xl"></i>
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-1">Phone Number</h4>
                   <p className="text-gray-600">+1 704 000-0000</p>
-                  {/* <p className="text-gray-600">+1 (555) 123-4567</p> */}
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
@@ -192,7 +191,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-1">Email Address</h4>
-                  <p className="text-gray-600">contact-us@m.smartshipment.online</p>
+                  <p className="text-gray-600">contact-us@shipwidelogistics.online</p>
                   {/* <p className="text-gray-600">contactus@pannywiselogistics.online</p> */}
                 </div>
               </div>
@@ -212,7 +211,7 @@ const ContactSection = () => {
             <div className="bg-secondary/10 rounded-lg p-6">
               <h4 className="font-semibold text-secondary mb-4">Emergency Contact</h4>
               <p className="text-gray-800 mb-2">24/7 Support for urgent shipments</p>
-              <p className="text-background font-semibold text-lg">+1 704 000-0000</p>
+              <p className="text-background font-semibold text-lg">contact-us@shipwidelogistics.online</p>
             </div>
           </div>
         </div>

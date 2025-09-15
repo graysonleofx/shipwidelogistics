@@ -23,7 +23,7 @@ export default function Header() {
             <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center">
               <i className="ri-truck-line text-xl"></i>
             </div>
-            <h1 className="text-2xl font-bold" style={{fontFamily: "Roboto, serif"}}>Ship<span style={{color: '#16DB65'}}>Wide</span></h1>
+            <h1 className="text-2xl font-bold" style={{fontFamily: "Roboto, serif"}}>SHIP<span style={{color: '#16DB65'}}>WIDE</span></h1>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
