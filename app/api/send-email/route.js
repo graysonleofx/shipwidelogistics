@@ -17,11 +17,17 @@ export async function POST(req) {
 
     // Send the email using Resend
     const data = await resend.emails.send({
-      from: 'Pennywise Logistics <contact@pennywiselogistics.online>',
+      from: 'Shipwide Logistics <contact-us@shipwidelogistics.online>',
       to: email,
-      subject: `Pennywise Logistics Order Shipment: #${trackingId}`,
+      subject: `Your Shipment Has Been Recieved: #${trackingId}`,
       html: `
+
       <div style="background:#f6f6f6;padding:0;margin:0; width:100%; font-family:Arial,sans-serif;">
+        <div>
+        <div style="text-align:center; padding:16px 0; background:#222;">
+          <h1 style="color:#fff; margin:0; font-size:24px;">Shipwide Logistics</h1>
+          <p style="color:#aaa; margin:4px 0 0 0; font-size:14px;">Reliable Shipping & Logistics Solutions</p>
+        </div>
         <table width="100%" cellpadding="0" cellspacing="0" style="background:#f6f6f6;padding:0;margin:0;">
         <tr>
           <td align="center">
@@ -29,7 +35,7 @@ export async function POST(req) {
             <tr>
             <td style="padding:32px 32px 16px 32px;text-align:center;">
               <!-- Logo Placeholder -->
-              <h2 style="font-family:Arial,sans-serif;color:#222;font-size:24px;margin:0 0 8px 0;">Pennywise Logistics</h2>
+              <h2 style="font-family:Arial,sans-serif;color:#222;font-size:24px;margin:0 0 8px 0;">Shipwide Logistics</h2>
               <p style="font-family:Arial,sans-serif;color:#555;font-size:16px;margin:0 0 24px 0;">Your shipment is on its way!</p>
             </td>
             </tr>
