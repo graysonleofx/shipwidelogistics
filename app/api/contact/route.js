@@ -18,8 +18,8 @@ export async function POST(req) {
     }
 
     const data = await resend.emails.send({
-      from: 'Pennywise Contact <contact@pennywiselogistics.online>',
-      to: ['contact@pennywiselogistics.online'],
+      from: 'Shipwide Logistics Contact <contact-us@shipwidelogistics.online>',
+      to: ['contact-us@shipwidelogistics.online'],
       subject: subject || 'New Contact Message',
       html: `
         <p><strong>Name:</strong> ${name}</p>

@@ -23,7 +23,6 @@ export async function POST(req) {
       html: `
 
       <div style="background:#f6f6f6;padding:0;margin:0; width:100%; font-family:Arial,sans-serif;">
-        <div>
         <div style="text-align:center; padding:16px 0; background:#222;">
           <h1 style="color:#fff; margin:0; font-size:24px;">Shipwide Logistics</h1>
           <p style="color:#aaa; margin:4px 0 0 0; font-size:14px;">Reliable Shipping & Logistics Solutions</p>
@@ -41,7 +40,7 @@ export async function POST(req) {
             </tr>
             <tr>
             <td style="padding:0 32px 24px 32px;">
-              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin:0;">
               <tr>
                 <td style="font-family:Arial,sans-serif;color:#888;font-size:14px;padding:8px 0;">From:</td>
                 <td style="font-family:Arial,sans-serif;color:#222;font-size:14px;padding:8px 0;">${shipmentDetails.from}</td>
@@ -77,22 +76,27 @@ export async function POST(req) {
               <tr>
                 <td style="font-family:Arial,sans-serif;color:#888;font-size:14px;padding:8px 0;">Tracking Code:</td>
                 <td style="font-family:Arial,sans-serif;color:#222;font-size:14px;padding:8px 0;">
-                <strong>#${trackingId}</strong>
+                <strong>${trackingId}</strong>
                 </td>
               </tr>
               </table>
             </td>
             </tr>
             <tr>
+              <td style="padding:0 32px 16px 32px;">
+              <p style="font-family:Arial,sans-serif;color:#aaa;font-size:12px;margin:24px 0 0 0;">If you have any questions, feel free to contact us at <a href="mailto:contact-us@shipwidelogistics.online" style="color:#04471C;text-decoration:none;">contact-us@shipwidelogistics.online</a>.</p>
+              </td>
+            </tr>
+            <tr>
             <td style="padding:0 32px 32px 32px;text-align:center;">
-              <a href="${shipmentDetails.trackingUrl}" style="display:inline-block;background:#F97316;color:#fff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;padding:12px 32px;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-top:16px;">
-              Track Shipment
+              <a href="${shipmentDetails.trackingUrl}" style="display:inline-block;background:#04471C;color:#fff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;padding:12px 32px;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-top:16px;">
+               Access Tracking Here
               </a>
             </td>
             </tr>
             <tr>
             <td style="padding:0 32px 32px 32px;text-align:center;">
-              <p style="font-family:Arial,sans-serif;color:#aaa;font-size:12px;margin:24px 0 0 0;">&copy; ${new Date().getFullYear()} Pennywise Logistics. All rights reserved.</p>
+              <p style="font-family:Arial,sans-serif;color:#aaa;font-size:12px;margin:24px 0 0 0;">&copy; ${new Date().getFullYear()} Shipwide Logistics. All rights reserved.</p>
             </td>
             </tr>
           </table>
