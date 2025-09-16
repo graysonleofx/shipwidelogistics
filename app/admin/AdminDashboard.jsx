@@ -681,6 +681,7 @@ export default function AdminDashboard({ onLogout }) {
                           >
                             <option value="Processing">Processing</option>
                             <option value="In Transit">In Transit</option>
+                            <option value="On Hold">On Hold</option>
                             <option value="Out for Delivery">Out for Delivery </option>
                             <option value="Delivered">Delivered</option>
                           </select>

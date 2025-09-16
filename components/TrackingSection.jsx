@@ -40,7 +40,8 @@ export default function TrackingSection() {
     const validSteps = [
     'In Transit',
     'Out for Delivery',
-    'Delivered'
+    'Delivered',
+    'On Hold'
     ]
 
     const uniqueStatuses = new Set();
@@ -68,10 +69,10 @@ export default function TrackingSection() {
         <div className="text-center mb-12">
           <span className="text-secondary font-semibold text-lg mb-4 block">Track Your Shipment</span>
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-            Real-Time Shipment Tracking
+            Track Your Package Instantly
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Enter your tracking code to get real-time updates on your shipment status and location.
+            Provide your tracking code to view the latest updates on your shipment's status and location.
           </p>
         </div>
 
@@ -110,14 +111,13 @@ export default function TrackingSection() {
                 <div className="text-center py-8">
                   <i className="ri-error-warning-line text-red-500 text-5xl mb-4"></i>
                   <p className="text-red-600 font-medium">{trackingResult.error}</p>
-                  {/* <p className="text-gray-500 mt-2">Try: LGS001 or LGS002 for demo</p> */}
                 </div>
               ) : (
                 <div>
                   <div className="flex items-center justify-between mb-6 pb-6 border-b border-gray-200">
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-800">Tracking: {trackingResult.id}</h3>
-                      <p className="text-gray-600">Status: <span className="font-semibold text-secondary">{trackingResult.status}</span></p>
+                      <h3 className="text-2xl font-bold text-slate-800">Tracking Code: {trackingResult.id}</h3>
+                      <p className="text-gray-600">Current Status: <span className="font-semibold text-secondary">{trackingResult.status}</span></p>
                     </div>
                     <div className="text-right">
                       <p className="text-gray-600">Estimated Delivery</p>
@@ -127,7 +127,7 @@ export default function TrackingSection() {
 
                   <div className="mb-8">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm text-gray-600">Progress</span>
+                      <span className="text-sm text-gray-600">Shipment Progress</span>
                       <span className="text-sm font-semibold text-secondary">{progress}%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-3">
@@ -139,7 +139,7 @@ export default function TrackingSection() {
                   </div>
 
                   <div className="grid grid-cols-1 gap-8 mb-8">
-                    {/* Current Location Card */}
+                    {/* Origin Card */}
                     <div className="bg-white border border-dashed border-gray-300 rounded-lg p-6 shadow-sm max-w-md mx-auto relative overflow-hidden w-full">
                       <div className="absolute left-0 top-0 h-full w-2 bg-secondary/10 rounded-l-lg"></div>
                       <div className="flex items-center mb-2">
@@ -151,7 +151,7 @@ export default function TrackingSection() {
                         <span className="font-semibold text-secondary">{trackingResult.status}</span>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600 mb-1">
-                        <span>Senders Name:</span>
+                        <span>Sender:</span>
                         <span className="font-semibold text-secondary">{trackingResult.senderName}</span>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
@@ -178,7 +178,7 @@ export default function TrackingSection() {
                         <span className="font-semibold text-secondary">{trackingResult.status}</span>
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Recivers Name:</span>
+                        <span>Recipient:</span>
                         <span className="font-semibold text-secondary">{trackingResult.receiverName}</span>
                       </div>
                       <div className="border-t border-dashed border-gray-300 mt-4 pt-2 text-xs text-gray-400 text-center">
@@ -187,40 +187,8 @@ export default function TrackingSection() {
                     </div>
                   </div>
 
-                  {/* <div>
-                    <h4 className="text-lg font-semibold text-slate-800 mb-4">Tracking Timeline</h4>
-                    {trackingResult && Array.isArray(trackingResult.timeline) && (
-                      <div className="overflow-x-auto">
-                        <table className="min-w-full bg-gray-50 rounded-lg shadow-sm">
-                          <thead>
-                            <tr>
-                              <th className="px-4 py-2 text-left text-xs font-semibold text-gray-600 uppercase">Status</th>
-                              <th className="px-4 py-2 text-left text-xs font-semibold text-gray-600 uppercase">Location</th>
-                              <th className="px-4 py-2 text-left text-xs font-semibold text-gray-600 uppercase">Date</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {trackingResult.timeline
-                              .filter(item => item.status && item.status.trim() !== '')
-                              .map((item, index) => (
-                              <tr key={index} className="border-b border-gray-200">
-                                <td className="px-4 py-2">
-                                  <span className={`font-medium ${item.completed ? 'text-orange-600' : 'text-gray-700'}`}>
-                                    {item.status}
-                                  </span>
-                                </td>
-                                <td className="px-4 py-2">{item.from}</td>
-                                <td className="px-4 py-2">{item.currentDate ? new Date(item.currentDate).toLocaleString() : '-'}</td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    )}
-                  </div> */}
-
                   <div className="mt-8 p-4 bg-blue-50 rounded-lg">
-                    <h5 className="font-semibold text-slate-800 mb-2">Location Map</h5>
+                    <h5 className="font-semibold text-slate-800 mb-2">Map Location</h5>
                     <iframe
                       src={`https://maps.google.com/maps?q=${encodeURIComponent(trackingResult.from)}&output=embed`}
                       width="100%"

@@ -10,10 +10,10 @@ export default function ServicesSection() {
         <div className="text-center mb-16">
           <span className="text-secondary font-semibold text-lg mb-4 block">Our Services</span>
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-            Wide Variety of Logistics Services
+            A Broad Range of Logistics Solutions
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            At the heart of our company lies a commitment to delivering comprehensive logistics solutions tailored to meet the diverse needs of our clients. We offer a wide variety of logistics services designed to streamline your supply chain and enhance operational efficiency. Whether you require freight transportation, warehousing, distribution, or specialized logistics management, our expert team is equipped to provide reliable and cost-effective solutions.
+            We are dedicated to providing end-to-end logistics services tailored to the unique requirements of each client. Our offerings cover everything from freight transport and warehousing to distribution and specialized logistics management. Rely on our experienced team to optimize your supply chain with dependable and cost-efficient solutions.
           </p>
         </div>
 

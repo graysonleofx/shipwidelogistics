@@ -2,21 +2,21 @@
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'E-commerce Manager, ShopEase',
-    feedback: 'Ship wide Logistics has been a game changer for our business. Fast, reliable, and always professional!',
+    name: 'Sarah J.',
+    role: 'Manages E-commerce at ShopEase',
+    feedback: 'Ship wide Logistics has transformed our operations. They are prompt, dependable, and always maintain professionalism.',
     avatar: 'https://randomuser.me/api/portraits/women/44.jpg'
   },
   {
-    name: 'Michael Lee',
-    role: 'Supply Chain Lead, TechNova',
-    feedback: 'Their tracking system and customer support are top-notch. Highly recommended for any growing company.',
+    name: 'Michael L.',
+    role: 'Leads Supply Chain at TechNova',
+    feedback: 'Their tracking tools and support team are excellent. I highly recommend them to any expanding business.',
     avatar: 'https://randomuser.me/api/portraits/men/32.jpg'
   },
   {
-    name: 'Priya Patel',
-    role: 'Operations Director, FreshMart',
-    feedback: 'We trust Ship wide for all our logistics needs. They always deliver on time and keep us updated.',
+    name: 'Priya P.',
+    role: 'Directs Operations at FreshMart',
+    feedback: 'Ship wide is our trusted logistics partner. Deliveries are always timely and communication is clear.',
     avatar: 'https://randomuser.me/api/portraits/women/68.jpg'
   }
 ];

@@ -1,5 +1,8 @@
 'use client';
 
+import logisticsWorker from '@/public/assets/delivery.jpg'
+import Image from 'next/image';
+
 export default function AboutSection() {
   const stats = [
     { number: '80k', label: 'Successful Delivery', icon: 'ri-truck-line' },
@@ -10,11 +13,11 @@ export default function AboutSection() {
 
   const services = [
     'Container Freight',
-    'Frozen Product Shipping', 
-    'Intermodal Shipping',
+    'Frozen Goods Transport',
+    'Intermodal Logistics',
     'Sea Road Trucking',
-    'Rail Road Shipping',
-    'Project Shipping'
+    'Rail Freight Services',
+    'Project Cargo Shipping'
   ];
 
   return (
@@ -36,12 +39,12 @@ export default function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mt-16">
           <div>
-            <span className="text-secondary font-semibold text-lg mb-4 block">About Us</span>
+            <span className="text-secondary font-semibold text-lg mb-4 block">Who We Are</span>
             <h2 className="text-4xl font-bold text-slate-800 mb-6">
-              We'll keep your items damage free
+              We ensure your items arrive safely and intact
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Ship Wide Logistics Air freight service delivers the knowledge & opportunity to minimize every mile in every lane. Get Far more Transport and Logistics work experience with Ship Wide Logistics supply chain technology Intelligence.
+              Ship Wide Logistics offers expert air freight services, providing the insight and solutions needed to optimize every mile of your supply chain. Experience enhanced transport and logistics efficiency with our advanced supply chain technology and expertise.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -64,11 +67,12 @@ export default function AboutSection() {
           </div>
 
           <div className="relative">
-            <img 
-              src="https://readdy.ai/api/search-image?query=Professional%20logistics%20worker%20in%20safety%20helmet%20and%20vest%20working%20at%20modern%20cargo%20warehouse%20with%20containers%20and%20shipping%20equipment%2C%20industrial%20setting%20with%20clean%20professional%20lighting%20showcasing%20freight%20transportation%20industry&width=600&height=400&seq=about001&orientation=landscape"
-              alt="Logistics worker"
-              className="rounded-lg shadow-lg object-cover w-full h-96"
+            <Image
+              src={logisticsWorker}
+              alt="Logistics Worker"
+              className="w-full h-auto rounded-lg shadow-lg"
             />
+
             <div className="absolute bottom-4 right-4 bg-secondary text-white p-6 rounded-lg">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-1">35</div>
