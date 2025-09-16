@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import logo from '@/public/assets/brand.png';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,10 +30,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center">
-                <i className="ri-truck-line text-xl"></i>
-              </div>
-              <h3 className="text-2xl font-bold" style={{fontFamily: "Roboto, serif"}}>SHIP<span style={{color: '#16DB65'}}>WIDE</span></h3>
+              <Image src={logo} alt="Logo" style={{objectFit: "contain", height: "100px", width: "100px"}} />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted partner in global logistics and freight transportation. We deliver excellence across land, sea, and rail.
