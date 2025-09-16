@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import  supabase  from '@/lib/supabaseClient';
+import brand from '@/public/assets/brand.png';
 
 
 export default function AdminLogin( { onLogin }) {

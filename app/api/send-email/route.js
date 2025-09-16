@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import logo from '@/public/brand.png';
 // Import the Resend SDK
 import {Resend} from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -24,8 +25,8 @@ export async function POST(req) {
 
       <div style="background:#f6f6f6;padding:0;margin:0; width:100%; font-family:Arial,sans-serif;">
         <div style="text-align:center; padding:16px 0; background:#222;">
-          <h1 style="color:#fff; margin:0; font-size:24px;">Shipwide Logistics</h1>
-          <p style="color:#aaa; margin:4px 0 0 0; font-size:14px;">Reliable Shipping & Logistics Solutions</p>
+          <img src="https://shipwidelogistics.online/assets/brand.png" alt="Shipwide Logistics" style="height:50px; margin-bottom:8px;" />
+          <p style="color:#fff; margin:4px 0 0 0; font-size:14px;">Reliable Shipping & Logistics Solutions</p>
         </div>
         <table width="100%" cellpadding="0" cellspacing="0" style="background:#f6f6f6;padding:0;margin:0;">
         <tr>

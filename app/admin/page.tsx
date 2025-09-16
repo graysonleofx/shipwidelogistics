@@ -6,6 +6,8 @@ import AdminLogin from './AdminLogin.jsx';
 import AdminDashboard from './AdminDashboard.jsx';
 import TopHeader from '@/components/TopHeader.jsx';
 import  supabase  from '@/lib/supabaseClient.js';
+import brand from '@/public/assets/brand.png';
+import Image from 'next/image.js';
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -78,10 +80,7 @@ export default function AdminPage() {
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center space-x-2 cursor-pointer">
-                <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center">
-                  <i className="ri-truck-line text-white text-xl"></i>
-                </div>
-                <h1 className="text-2xl font-bold text-slate-800" style={{fontFamily: "Roboto, serif"}}>Smart<span style={{color: '#16DB65'}}>Shipment</span></h1>
+                <Image src={brand} alt="Shipwide Logistics" className="w-8 h-8" />
               </Link>
               <span className="text-secondary font-medium">Admin Portal</span>
             </div>
