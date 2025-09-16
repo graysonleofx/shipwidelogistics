@@ -458,6 +458,23 @@ export default function AdminDashboard({ onLogout }) {
     alert(`Shipment status updated to ${newStatus}`);
   };
 
+  const handleDeleteRoute = async (id) => {
+    const confirmDelete = confirm('Are you sure you want to delete this shipment?');
+    if (!confirmDelete) return;
+
+    const { error } = await supabase
+      .from('Shipments')
+      .delete()
+      .eq('id', id);
+
+    if (error) {
+      alert('Failed to delete shipment. Please try again.');
+      return;
+    }
+
+    setShipments(prev => prev.filter(shipment => shipment.id !== id));
+    alert('Shipment deleted successfully.');
+  };
 
   const userStats = [
     { label: 'Total Users', value: userStat.totalUsers, icon: 'ri-user-line', color: 'bg-blue-500' },
@@ -686,7 +703,7 @@ export default function AdminDashboard({ onLogout }) {
                           <div className="flex items-center gap-2">
                             <button
                               className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-xs font-semibold"
-                              // onClick={() => handleDeleteRoute(shipment.id)}
+                              onClick={() => handleDeleteRoute(shipment.id)}
                             >
                               Delete
                             </button>
@@ -890,7 +907,7 @@ export default function AdminDashboard({ onLogout }) {
 
                 <button
                   type="submit"
-                  className="bg-secondary hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors whitespace-nowrap cursor-pointer"
+                  className="bg-secondary hover:scale-105 text-white px-8 py-3 rounded-lg font-semibold transition-colors whitespace-nowrap cursor-pointer"
                 >
                   <i className="ri-add-line mr-2"></i>
                   Create Shipment

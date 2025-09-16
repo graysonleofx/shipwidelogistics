@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import brand from '@/public/assets/icon.png';
 import logo from '@/public/assets/brand.png';
 import Image from 'next/image';
 import Link from 'next/link';

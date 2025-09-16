@@ -6,7 +6,7 @@ import AdminLogin from './AdminLogin.jsx';
 import AdminDashboard from './AdminDashboard.jsx';
 import TopHeader from '@/components/TopHeader.jsx';
 import  supabase  from '@/lib/supabaseClient.js';
-import brand from '@/public/assets/brand.png';
+import brand from '@/public/assets/brandG.png';
 import Image from 'next/image.js';
 
 export default function AdminPage() {
@@ -80,7 +80,7 @@ export default function AdminPage() {
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center space-x-2 cursor-pointer">
-                <Image src={brand} alt="Shipwide Logistics" className="w-8 h-8" />
+                <Image src={brand} alt="Shipwide Logistics" style={{objectFit: "contain", height: "100px", width: "100px"}} />
               </Link>
               <span className="text-secondary font-medium">Admin Portal</span>
             </div>
