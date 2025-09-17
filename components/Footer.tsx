@@ -83,7 +83,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start">
                 <i className="ri-map-pin-line text-background text-lg mr-3 mt-1"></i>
-                <p className="text-gray-300">10685-B Hazelhurst Dr. Houston, Tx 77043 United State</p>
+                <p className="text-gray-300">501 E Pike Street Capitol Hill. WA, Seattle 98122 United State</p>
               </div>
               {/* <div className="flex items-center">
                 <i className="ri-phone-line text-background text-lg mr-3"></i>

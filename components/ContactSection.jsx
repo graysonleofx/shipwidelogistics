@@ -171,7 +171,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-1">Our Address</h4>
                   <h4 className="font-semibold text-slate-800 mb-1">Ship wide Logistics LLC</h4>
-                  <p className="text-gray-600">10685-B Hazelhurst Dr. Houston, Tx 77043 United State</p>
+                  <p className="text-gray-600">501 E Pike Street Capitol Hill. WA, Seattle 98122 United State</p>
                 </div>
               </div>
 

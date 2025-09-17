@@ -38,11 +38,12 @@ export default function TrackingSection() {
     }
 
     const validSteps = [
-    'In Transit',
-    'Out for Delivery',
-    'Delivered',
-    'On Hold'
-    ]
+      'Dispatched',
+      'In Transit',
+      'Out for Delivery',
+      'Delivered',
+    ];
+
 
     const uniqueStatuses = new Set();
 
@@ -117,7 +118,7 @@ export default function TrackingSection() {
                   <div className="flex items-center justify-between mb-6 pb-6 border-b border-gray-200">
                     <div>
                       <h3 className="text-2xl font-bold text-slate-800">Tracking Code: {trackingResult.id}</h3>
-                      <p className="text-gray-600">Current Status: <span className="font-semibold text-secondary">{trackingResult.status}</span></p>
+                      <p className="text-gray-600">Current Status: <span className={`font-semibold ${trackingResult.status === 'In Transit' ? 'text-yellow-500' : trackingResult.status === 'Delivered' ? 'text-green-500' : trackingResult.status === 'On Hold' ? 'text-red-500' : 'text-orange-500'}`}>{trackingResult.status}</span></p>
                     </div>
                     <div className="text-right">
                       <p className="text-gray-600">Estimated Delivery</p>
@@ -175,7 +176,11 @@ export default function TrackingSection() {
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
                         <span>Status:</span>
-                        <span className="font-semibold text-secondary">{trackingResult.status}</span>
+                        {trackingResult.status === 'On Hold' ? (
+                          <span className="font-semibold bg-yellow-100 text-yellow-800">{trackingResult.status}</span>
+                        ) : (
+                          <span className="font-semibold text-secondary">{trackingResult.status}</span>
+                        )}
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
                         <span>Recipient:</span>

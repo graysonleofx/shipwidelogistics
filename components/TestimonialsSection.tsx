@@ -1,23 +1,28 @@
 'use client';
 
+import woman1 from '@/public/assets/woman.jpg'
+import woman2 from '@/public/assets/Stéphanie.jpg'
+import man from '@/public/assets/man.jpg'
+import Image from 'next/image';
+
 const testimonials = [
   {
-    name: 'Sarah J.',
+    name: 'Mary K. Miller',
     role: 'Manages E-commerce at ShopEase',
     feedback: 'Ship wide Logistics has transformed our operations. They are prompt, dependable, and always maintain professionalism.',
-    avatar: 'https://randomuser.me/api/portraits/women/44.jpg'
+    avatar: woman1
   },
   {
-    name: 'Michael L.',
+    name: 'Charlie V. Lecroy',
     role: 'Leads Supply Chain at TechNova',
     feedback: 'Their tracking tools and support team are excellent. I highly recommend them to any expanding business.',
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg'
+    avatar: man
   },
   {
-    name: 'Priya P.',
+    name: 'Tracey J. Kirby',
     role: 'Directs Operations at FreshMart',
     feedback: 'Ship wide is our trusted logistics partner. Deliveries are always timely and communication is clear.',
-    avatar: 'https://randomuser.me/api/portraits/women/68.jpg'
+    avatar: woman2
   }
 ];
 
@@ -32,7 +37,7 @@ export default function TestimonialsSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, idx) => (
             <div key={idx} className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center">
-              <img src={t.avatar} alt={t.name} className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-orange-100" />
+              <Image src={t.avatar} alt={t.name} className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-orange-100" />
               <p className="text-gray-600 mb-4 italic">"{t.feedback}"</p>
               <div>
                 <div className="font-semibold text-slate-800">{t.name}</div>

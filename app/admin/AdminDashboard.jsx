@@ -484,7 +484,9 @@ export default function AdminDashboard({ onLogout }) {
     { label: 'Total Shipments', value: statss.totalShipments, icon: 'ri-truck-line', color: 'bg-blue-500' },
     { label: 'In Transit', value: statss.inTransit, icon: 'ri-road-map-line', color: 'bg-orange-500' },
     { label: 'Delivered', value: statss.delivered, icon: 'ri-check-line', color: 'bg-green-500' },
-    { label: 'Processing', value: statss.processing, icon: 'ri-time-line', color: 'bg-yellow-500' }
+    { label: 'Processing', value: statss.processing, icon: 'ri-time-line', color: 'bg-yellow-500' },
+    { label: 'On Hold', value: statss.onHold, icon: 'ri-pause-line', color: 'bg-red-500' },
+    { label: 'Dispatched', value: statss.dispatched, icon: 'ri-truck-line', color: 'bg-blue-500' }
   ];
 
   const deliveryStages = [
@@ -680,6 +682,7 @@ export default function AdminDashboard({ onLogout }) {
                             className="text-xs border border-gray-300 rounded px-2 py-1 pr-8 mb-2"
                           >
                             <option value="Processing">Processing</option>
+                            <option value="Dispatched">Dispatched</option>
                             <option value="In Transit">In Transit</option>
                             <option value="On Hold">On Hold</option>
                             <option value="Out for Delivery">Out for Delivery </option>
