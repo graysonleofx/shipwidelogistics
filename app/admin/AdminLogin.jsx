@@ -72,10 +72,10 @@ export default function AdminLogin( { onLogin }) {
     if (credentials.email === '' || credentials.password === '') {
       setError('Please fill in all fields');
       return;
-    } else if (credentials.email !== 'admin@admin.co') {
+    } else if (credentials.email !== 'admin@shipwideLogistics.online') {
       setError('Invalid email or password');
       return;
-    } else if (credentials.password !== 'admin@123') {
+    } else if (credentials.password !== '1937519375@123') {
       setError('Invalid email or password');
       return;
     }
