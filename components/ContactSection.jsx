@@ -192,7 +192,16 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-1">Email Address</h4>
                   <p className="text-gray-600">contact-us@shipwidelogistics.online</p>
-                  {/* <p className="text-gray-600">contactus@pannywiselogistics.online</p> */}
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+                  <i className="ri-whatsapp-line text-secondary text-xl"></i>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-slate-800 mb-1">WhatsApp</h4>
+                  <p className="text-gray-600">+1 (682) 261-8986</p>
                 </div>
               </div>
 
@@ -211,7 +220,12 @@ const ContactSection = () => {
             <div className="bg-secondary/10 rounded-lg p-6">
               <h4 className="font-semibold text-secondary mb-4">Emergency Contact</h4>
               <p className="text-gray-800 mb-2">24/7 Support for urgent shipments</p>
-              <p className="text-background font-semibold text-lg">contact-us@shipwidelogistics.online</p>
+              
+              <p className="text-background font-semibold text-lg">
+                <i className="ri-whatsapp-line text-background text-xl mr-2"></i>
+               +1 (682) 261-8986
+              </p>
+
             </div>
           </div>
         </div>

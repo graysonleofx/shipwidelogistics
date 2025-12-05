@@ -18,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-secondary text-white sticky top-[72px] md:top-[60px] z-50 shadow-md">
+    <header className="bg-secondary text-white sticky top-[88px] md:top-[60px]  z-50 shadow-md ">
       <div className="container mx-auto px-4 py-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
