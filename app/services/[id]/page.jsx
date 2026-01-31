@@ -1,6 +1,7 @@
 
 // import { useEffect, useState } from "react";
 import services from '@/data/services';
+import TopHeader from '@/components/TopHeader';
 import Header from './Header';
 import HeroSection from './HeroSection';
 import OverviewSection from './OverviewSection'
@@ -36,6 +37,7 @@ export default function Page({ params }) {
 
   return (
     <>
+      <TopHeader />
       <Header />
 
       {/* Hero Section */}

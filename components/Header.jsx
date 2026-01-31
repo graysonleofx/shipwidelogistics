@@ -22,14 +22,11 @@ export default function Header() {
       <div className="container mx-auto px-4 py-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            {/* <div className="w-8 h-8 bg-background rounded-lg flex items-center justify-center">
-              <i className="ri-truck-line text-xl"></i>
-              <Image src={brand} alt="Brand Logo" style={{objectFit: "contain", height: "100px", width: "100px"}}/>
-            </div>
-            <h1 className="text-2xl font-bold" style={{fontFamily: "Roboto, serif"}}>SHIP<span style={{color: '#16DB65'}}>WIDE</span></h1> */}
-            <div className="">
-              <Image src={logo} alt="Logo" style={{objectFit: "contain", height: "100px", width: "100px"}}/>
-            </div>
+            <Link href="/">
+              <div className="">
+                <Image src={logo} alt="Logo" style={{objectFit: "contain", height: "100px", width: "100px"}}/>
+              </div>
+            </Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">

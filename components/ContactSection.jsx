@@ -222,8 +222,8 @@ const ContactSection = () => {
               <p className="text-gray-800 mb-2">24/7 Support for urgent shipments</p>
               
               <p className="text-background font-semibold text-lg">
-                <i className="ri-whatsapp-line text-background text-xl mr-2"></i>
-               +1 (682) 261-8986
+                <i className="ri-mail-line text-background text-xl mr-2"></i>
+                contact-us@shipwidelogistics.online
               </p>
 
             </div>
