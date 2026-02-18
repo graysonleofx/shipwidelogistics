@@ -201,7 +201,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-1">WhatsApp</h4>
-                  <p className="text-gray-600">+1 (682) 261-8986</p>
+                  <p className="text-gray-600">+1 (515) 635-8402</p>
                 </div>
               </div>
 
